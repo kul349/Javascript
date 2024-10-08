@@ -26,3 +26,14 @@ const fitlerAName=name.filter(AName);
 const collectName=fitlerAName.map(name=>name.toUpperCase());
 console.log(collectName);
 console.log(fitlerAName);
+// learning the removing the data
+
+const removeData=(name)=>{
+    for(let i=name.length-1; i>=0; i--){
+        if(name[i][1]==='o'){
+            const deletedName=name.splice(i, 1);
+            console.log(deletedName);
+        }
+    }
+}
+removeData(name);
